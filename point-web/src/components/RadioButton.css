@@ -1,0 +1,106 @@
+.radio-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  font-family: inherit;
+  transition: opacity 0.2s ease;
+}
+
+.radio-button--disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.radio-button__input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.radio-button__custom {
+  position: relative;
+  display: inline-block;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  background-color: white;
+  transition: all 0.2s ease;
+  flex-shrink: 0;
+}
+
+/* Sizes */
+.radio-button--small .radio-button__custom {
+  width: 16px;
+  height: 16px;
+}
+
+.radio-button--medium .radio-button__custom {
+  width: 20px;
+  height: 20px;
+}
+
+.radio-button--large .radio-button__custom {
+  width: 24px;
+  height: 24px;
+}
+
+/* Label sizes */
+.radio-button--small .radio-button__label {
+  font-size: 0.875rem;
+}
+
+.radio-button--medium .radio-button__label {
+  font-size: 1rem;
+}
+
+.radio-button--large .radio-button__label {
+  font-size: 1.125rem;
+}
+
+/* Hover state */
+.radio-button:hover:not(.radio-button--disabled) .radio-button__custom {
+  border-color: #646cff;
+}
+
+/* Focus state */
+.radio-button__input:focus-visible + .radio-button__custom {
+  outline: 2px solid #646cff;
+  outline-offset: 2px;
+}
+
+/* Checked state */
+.radio-button__input:checked + .radio-button__custom {
+  border-color: #646cff;
+  background-color: #646cff;
+}
+
+.radio-button__input:checked + .radio-button__custom::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background-color: white;
+}
+
+/* Inner dot sizes for checked state */
+.radio-button--small .radio-button__input:checked + .radio-button__custom::after {
+  width: 6px;
+  height: 6px;
+}
+
+.radio-button--medium .radio-button__input:checked + .radio-button__custom::after {
+  width: 8px;
+  height: 8px;
+}
+
+.radio-button--large .radio-button__input:checked + .radio-button__custom::after {
+  width: 10px;
+  height: 10px;
+}
+
+.radio-button__label {
+  color: rgba(255, 255, 255, 0.87);
+  user-select: none;
+}

@@ -1,0 +1,37 @@
+.radio-button-group {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.radio-button-group--horizontal {
+  flex-direction: row;
+}
+
+.radio-button-group--vertical {
+  flex-direction: column;
+}
+
+/* Gap sizes */
+.radio-button-group--horizontal.radio-button-group--gap-small {
+  gap: 0.5rem;
+}
+
+.radio-button-group--horizontal.radio-button-group--gap-medium {
+  gap: 1rem;
+}
+
+.radio-button-group--horizontal.radio-button-group--gap-large {
+  gap: 1.5rem;
+}
+
+.radio-button-group--vertical.radio-button-group--gap-small {
+  gap: 0.25rem;
+}
+
+.radio-button-group--vertical.radio-button-group--gap-medium {
+  gap: 0.5rem;
+}
+
+.radio-button-group--vertical.radio-button-group--gap-large {
+  gap: 0.75rem;
+}
