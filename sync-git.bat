@@ -9,5 +9,5 @@ if %errorlevel% equ 0 (
 ) else (
     echo %date% %time%: No changes, already up to date
 )
-timeout /t 10 /nobreak >nul
+timeout /t 2 /nobreak >nul
 goto loop

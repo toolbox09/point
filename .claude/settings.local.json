@@ -13,7 +13,14 @@
       "Bash(do git fetch origin)",
       "Bash(done)",
       "Bash(chmod:*)",
-      "Bash(git branch:*)"
+      "Bash(git branch:*)",
+      "Bash(npm install)",
+      "Bash(npm run dev:*)",
+      "Bash(pkill:*)",
+      "Bash(taskkill:*)",
+      "Bash(tasklist)",
+      "Bash(findstr:*)",
+      "Bash(netstat:*)"
     ],
     "deny": [],
     "ask": []

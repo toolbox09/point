@@ -16,5 +16,5 @@ while true; do
         echo "$(date): No changes, already up to date"
     fi
 
-    sleep 10
+    sleep 2
 done
