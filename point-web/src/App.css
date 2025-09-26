@@ -37,6 +37,25 @@
   padding: 2em;
 }
 
+.checkbox-demo {
+  margin: 20px 0;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.checkbox-demo h3 {
+  margin-top: 0;
+  margin-bottom: 16px;
+  color: #333;
+}
+
+.checkbox-demo .checkbox-container {
+  display: block;
+  margin-bottom: 12px;
+}
+
 .read-the-docs {
   color: #888;
 }
