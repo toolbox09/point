@@ -2,6 +2,7 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import Button from './components/Button'
 import Checkbox from './components/Checkbox'
 
 function App() {
@@ -19,9 +20,16 @@ function App() {
       </div>
       <h1>안녕하세요</h1>
       <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
+        <Button onClick={() => setCount((count) => count + 1)}>
           count is {count}
-        </button>
+        </Button>
+        <div style={{ display: 'flex', gap: '1rem', marginTop: '1rem', flexWrap: 'wrap' }}>
+          <Button variant="primary" size="small">Primary Small</Button>
+          <Button variant="secondary" size="medium">Secondary Medium</Button>
+          <Button variant="danger" size="large">Danger Large</Button>
+          <Button variant="primary" isLoading>Loading...</Button>
+          <Button variant="secondary" disabled>Disabled</Button>
+        </div>
         <p>
           Edit <code>src/App.tsx</code> and save to test HMR
         </p>
