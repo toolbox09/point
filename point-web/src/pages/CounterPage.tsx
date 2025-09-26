@@ -11,7 +11,7 @@ export default function CounterPage() {
 
   return (
     <div className="counter-page">
-      <h1>카운터 페이지</h1>
+      <h1>올려 올려</h1>
       <div className="counter-container">
         <div className="counter-display">
           <span className="counter-number">{count}</span>

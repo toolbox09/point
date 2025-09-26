@@ -21,7 +21,7 @@ export default function Navigation() {
             to="/counter"
             className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`}
           >
-            카운터
+            올려 올려
           </NavLink>
           <NavLink
             to="/posts"
