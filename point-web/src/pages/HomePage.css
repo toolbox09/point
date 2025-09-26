@@ -1,0 +1,39 @@
+.home-page {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  min-height: calc(100vh - 140px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.greeting-section {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.greeting-section h1 {
+  font-size: 3rem;
+  color: #333;
+  margin: 0;
+  font-weight: 300;
+  letter-spacing: -0.02em;
+}
+
+@media (max-width: 768px) {
+  .home-page {
+    padding: 1rem;
+  }
+
+  .greeting-section {
+    padding: 3rem 1.5rem;
+  }
+
+  .greeting-section h1 {
+    font-size: 2.5rem;
+  }
+}

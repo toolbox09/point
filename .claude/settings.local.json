@@ -15,6 +15,7 @@
       "Bash(chmod:*)",
       "Bash(git branch:*)",
       "Bash(npm install)",
+      "Bash(npm install:*)",
       "Bash(npm run dev:*)",
       "Bash(pkill:*)",
       "Bash(taskkill:*)",
