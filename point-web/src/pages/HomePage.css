@@ -1,27 +1,29 @@
 .home-page {
   padding: 2rem;
-  max-width: 1200px;
-  margin: 0 auto;
-  min-height: calc(100vh - 140px);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  width: 100%;
+  margin: 0;
+  min-height: calc(100vh - 80px);
 }
 
-.greeting-section {
+.page-content {
   text-align: center;
   padding: 4rem 2rem;
-  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  background: #f9f9f9;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-.greeting-section h1 {
-  font-size: 3rem;
+.page-content h1 {
+  font-size: 2.5rem;
   color: #333;
-  margin: 0;
+  margin: 0 0 1rem 0;
   font-weight: 300;
-  letter-spacing: -0.02em;
+}
+
+.page-content p {
+  font-size: 1.1rem;
+  color: #666;
+  margin: 0;
 }
 
 @media (max-width: 768px) {
@@ -29,11 +31,11 @@
     padding: 1rem;
   }
 
-  .greeting-section {
+  .page-content {
     padding: 3rem 1.5rem;
   }
 
-  .greeting-section h1 {
-    font-size: 2.5rem;
+  .page-content h1 {
+    font-size: 2rem;
   }
 }
