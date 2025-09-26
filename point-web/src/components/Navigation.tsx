@@ -3,12 +3,14 @@ import './Navigation.css'
 
 export default function Navigation() {
   return (
-    <nav className="navigation">
-      <div className="nav-container">
-        <div className="nav-brand">
-          <h2>Point Web</h2>
+    <header className="header">
+      <div className="header-container">
+        <div className="header-brand">
+          <NavLink to="/" className="brand-link">
+            <h1>Point Web</h1>
+          </NavLink>
         </div>
-        <div className="nav-menu">
+        <nav className="header-nav">
           <NavLink
             to="/"
             className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`}
@@ -27,8 +29,8 @@ export default function Navigation() {
           >
             포스트
           </NavLink>
-        </div>
+        </nav>
       </div>
-    </nav>
+    </header>
   )
 }

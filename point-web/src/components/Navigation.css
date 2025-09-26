@@ -1,4 +1,4 @@
-.navigation {
+.header {
   background: #007acc;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   position: sticky;
@@ -6,24 +6,32 @@
   z-index: 100;
 }
 
-.nav-container {
+.header-container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 64px;
+  height: 70px;
 }
 
-.nav-brand h2 {
+.header-brand .brand-link {
+  text-decoration: none;
   color: white;
+}
+
+.header-brand .brand-link:hover {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.header-brand h1 {
   margin: 0;
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   font-weight: bold;
 }
 
-.nav-menu {
+.header-nav {
   display: flex;
   gap: 0.5rem;
 }
@@ -50,7 +58,7 @@
 }
 
 @media (max-width: 768px) {
-  .nav-container {
+  .header-container {
     padding: 0 0.5rem;
     flex-direction: column;
     height: auto;
@@ -59,11 +67,11 @@
     gap: 1rem;
   }
 
-  .nav-brand h2 {
-    font-size: 1.25rem;
+  .header-brand h1 {
+    font-size: 1.5rem;
   }
 
-  .nav-menu {
+  .header-nav {
     gap: 0.25rem;
     flex-wrap: wrap;
     justify-content: center;
